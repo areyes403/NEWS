@@ -50,6 +50,10 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         return celda
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 200
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         print(articulosNoticias[indexPath.row].url)
